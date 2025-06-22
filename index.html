@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Remontownia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Farba1.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 426px)">
+        <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 425px)">
+</head>
+<body>
+  <header>
+    <div id="logo" class="logo" onclick="showSection('home')">
+      <img src="logo5.png" alt="Logo firmy" />
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" data-section="termin">Terminarz</a>
+        <li><a href="#" data-section="port">Portfolio</a>
+        <li><a href="#" data-section="onas">O nas</a>
+        <li><a href="#" data-section="uslugi">Usługi</a>
+        <li><a href="#" data-section="kontakt">Kontakt</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section active">
+      <div class="hero">
+
+        <div class="home-text-container">
+          <div class="gl">Profesjonalne remonty wnętrz</div>
+            <p>Nasza firma działa od 2010 roku. Specjalizujemy się w remontach wnętrz i pracach wykończeniowych.
+            Działamy na terenie województwa Pomorskiego, szczególnie w Gdynii, Gdańska, i Rumii.
+            Nasza misja to jakość, terminowość i uczciwość.</p>
+          <div class="home-description">
+            <ul>
+                <li>Pracujemy rzetelnie i terminowo, dbając o każdy szczegół w realizowanych projektach.</li>
+                <li>Nasze remonty wnętrz to połączenie nowoczesnych rozwiązań z klasycznym rzemiosłem.</li>
+                <li>Stawiamy na wysoką jakość materiałów i dbałość o detale, które wpływają na komfort użytkowania.</li>
+                <li>Współpracujemy z klientem na każdym etapie, aby spełnić indywidualne oczekiwania i potrzeby.</li>
+                <li>Gwarantujemy transparentne wyceny i elastyczne terminy dostosowane do Twojego kalendarza.</li>
+                <li>Realizujemy projekty od małych remontów po kompleksowe wykończenia pod klucz.</li>
+                <li>Jesteśmy dumni z licznych pozytywnych opinii i zadowolenia naszych klientów.</li>
+                <li>Posiadamy wszelkie niezbędne certyfikaty oraz ubezpieczenie OC.</li>
+                <li>Dbamy o estetykę i bezpieczeństwo na placu budowy oraz po zakończeniu prac.</li>
+                <li>Nasza pasja do budownictwa przekłada się na najwyższą jakość usług i trwałość efektów.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="image-slider">
+          <div class="slider-track">
+            <img src="zdjecie1.png" alt="Praca 1">
+            <img src="zdjecie2.png" alt="Praca 2">
+            <img src="zdjecie3.png" alt="Praca 3">
+            <img src="zdjecie4.png" alt="Praca 4">
+            <img src="zdjecie5.png" alt="Praca 5">
+            <img src="zdjecie6.png" alt="Praca 6">
+            <img src="zdjecie7.png" alt="Praca 7">
+            <img src="zdjecie8.png" alt="Praca 8">
+            <img src="zdjecie9.png" alt="Praca 9">
+            <img src="zdjecie10.png" alt="Praca 10">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="termin" class="section">
+                <div id="calendar-container">
+  <h1 id="year-display"></h1>
+  <div id="month-header">
+    <h2 id="month-display"></h2>
+    <div id="calendar-controls">
+      <button id="prev-month" class="arrow-btn">←</button>
+      <button id="next-month" class="arrow-btn">→</button>
+    </div>
+  </div>
+  <div id="calendar-grid"></div>
+</div>
+
+<div id="admin-panel" style="display: none;">
+  <h2>Panel administratora</h2>
+  <p>Wybierz zakres dat klikając na mini-kalendarzu:</p>
+
+  <!-- Dodałem nagłówek i kontrolki do panelu admina -->
+  <div id="admin-month-header" style="display:flex; justify-content: space-between; align-items: center; max-width: 500px; margin-bottom: 5px;">
+    <h3 id="admin-month-display" style="margin: 0;"></h3>
+    <div>
+      <button id="admin-prev-month" class="arrow-btn" style="margin-right:5px;">←</button>
+      <button id="admin-next-month" class="arrow-btn">→</button>
+    </div>
+  </div>
+
+  <div id="admin-calendar"></div>
+  <button id="confirm-btn">Zatwierdź zmiany</button>
+
+  <h3>Lista zablokowanych dat</h3>
+  <ul id="date-list"></ul>
+</div>
+    </section>
+
+    <section id="port" class="section">
+                <h2>Portfolio</h2>
+                  <p>Są to zdjęcia tylko niektórych mieszkań wykonanych przez nas.</p>
+                  <div class="portfolio-grid">
+                          <div class="portfolio-item">
+                  <img src="zdjecie1.png" alt="Projekt 1">
+                  <div>Remont kuchni – nowoczesny styl</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie2.png" alt="Projekt 2">
+                  <div>Łazienka w stylu skandynawskim</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie3.png" alt="Projekt 3">
+                  <div>Salon z podświetleniem LED</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie4.png" alt="Projekt 4">
+                  <div>Elegancki przedpokój</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie5.png" alt="Projekt 5">
+                  <div>Wykończenie sypialni</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie6.png" alt="Projekt 6">
+                  <div>Remont biura</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie7.png" alt="Projekt 7">
+                  <div>Taras z deską kompozytową</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie8.png" alt="Projekt 8">
+                  <div>Schody z podświetleniem</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie9.png" alt="Projekt 9">
+                  <div>Malowanie ścian dekoracyjnych</div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="zdjecie10.png" alt="Projekt 10">
+                  <div>Kompleksowy remont mieszkania</div>
+                </div>
+            </div>
+        </section>      
+                    
+    <section id="onas" class="section">
+  <h2>O nas</h2>
+  <p>Jesteśmy doświadczoną firmą z wieloletnim stażem na rynku. Zespół naszych fachowców zadba o najdrobniejsze szczegóły każdego zlecenia.
+  Od ponad 15 lat świadczymy kompleksowe usługi remontowe, stale podnosząc kwalifikacje i korzystając z nowoczesnych technologii. Naszym celem jest pełne zadowolenie klienta, dlatego dbamy o terminowość, jakość wykonania oraz transparentną komunikację na każdym etapie współpracy.
+  Nasza firma cieszy się zaufaniem zarówno klientów indywidualnych, jak i firmowych. Realizujemy projekty małe i duże, zawsze z takim samym zaangażowaniem i dbałością o detale.</p>
+</section>
+
+    <section id="uslugi" class="section" class="home-description">
+      <h2>Usługi remontowe</h2>
+      <p>Oferujemy szeroki zakres prac remontowych i wykończeniowych.</p>
+      <ul>
+        <li>Remonty mieszkań i domów</li>
+        <li>Wykończenia wnętrz pod klucz</li>
+        <li>Malowanie, szpachlowanie, tapetowanie</li>
+        <li>Układanie paneli i płytek</li>
+        <li>Instalacje elektryczne i hydrauliczne</li>
+        <li>Montaż drzwi, sufitów podwieszanych, ścianek działowych</li>
+    </ul>
+    </section>
+
+    <section id="kontakt" class="section">
+  <h2>Kontakt</h2>
+
+  <!-- Dodatkowe dane kontaktowe -->
+  <div class="contact-info" style="margin-bottom: 20px;">
+    <p><strong>Lokalizacja firmy:</strong> ul. Przykładowa 1, 00-000 Miasto</p>
+    <p><strong>Numer telefonu:</strong> +48 123 456 789</p>
+    <p><strong>Email:</strong> kontakt@remontownia.pl</p>
+    <p><strong>Właściciel firmy:</strong> Jan Kowalski</p>
+  </div>
+
+  <!-- Formularz kontaktowy -->
+  <form id="myForm">
+    <label for="imieInput">Imię:</label>
+    <input type="text" name="imie" id="imieInput" autocomplete="off" placeholder="Twoje imię" required>
+
+    <label for="emailInput">Email:</label>
+    <input type="email" name="email" id="emailInput" autocomplete="off" placeholder="Twój email" required>
+
+    <label for="wiadomoscInput">Wiadomość:</label>
+    <textarea name="wiadomosc" id="wiadomoscInput" placeholder="Wiadomość do mnie" required></textarea>
+
+    <button class="form button" type="submit">Wyślij</button>
+  </form>
+</section>
+
+    <section id="polityka-prywatnosci" class="section">
+            <h2>Polityka prywatności</h2>
+                  <p>
+                    Szanujemy Twoją prywatność i dokładamy wszelkich starań, aby chronić Twoje dane osobowe. Niniejsza polityka prywatności wyjaśnia, w jaki sposób gromadzimy, przetwarzamy i przechowujemy dane użytkowników odwiedzających naszą stronę internetową.
+                  </p>
+                
+                  <h3>1. Administrator danych osobowych</h3>
+                  <p>
+                    Administratorem danych osobowych jest <strong>[Nazwa firmy]</strong> z siedzibą przy <strong>[Adres firmy]</strong>, NIP: <strong>[123-456-78-90]</strong>.<br>
+                    W sprawach dotyczących danych osobowych prosimy o kontakt: <strong>[adres email]</strong>.
+                  </p>
+                
+                  <h3>2. Zakres i cel przetwarzania danych</h3>
+                  <p>
+                    Przetwarzamy dane osobowe dobrowolnie podane przez użytkownika w formularzu kontaktowym:
+                  </p>
+                  <ul>
+                    <li>imię,</li>
+                    <li>adres e-mail,</li>
+                    <li>treść wiadomości.</li>
+                  </ul>
+                  <p>
+                    Dane są przetwarzane wyłącznie w celu odpowiedzi na zapytanie lub kontakt w sprawach związanych z naszą działalnością.
+                  </p>
+                
+                  <h3>3. Podstawa prawna przetwarzania</h3>
+                  <p>
+                    Przetwarzanie danych odbywa się na podstawie art. 6 ust. 1 lit. a i f RODO — tj. zgody użytkownika oraz uzasadnionego interesu administratora.
+                  </p>
+                
+                  <h3>4. Przechowywanie danych</h3>
+                  <p>
+                    Dane przechowywane są przez czas niezbędny do realizacji celu kontaktu, nie dłużej niż 12 miesięcy od ostatniej wiadomości, chyba że przepisy wymagają dłuższego okresu.
+                  </p>
+                
+                  <h3>5. Udostępnianie danych</h3>
+                  <p>
+                    Dane nie są przekazywane osobom trzecim, z wyjątkiem przypadków wymaganych prawem (np. żądanie sądu lub organu państwowego).
+                  </p>
+                
+                  <h3>6. Prawa użytkownika</h3>
+                  <p>
+                    Masz prawo do:
+                  </p>
+                  <ul>
+                    <li>dostępu do swoich danych,</li>
+                    <li>sprostowania danych,</li>
+                    <li>usunięcia danych („prawo do bycia zapomnianym”),</li>
+                    <li>ograniczenia przetwarzania,</li>
+                    <li>przenoszenia danych,</li>
+                    <li>sprzeciwu wobec przetwarzania,</li>
+                    <li>cofnięcia zgody w dowolnym momencie.</li>
+                  </ul>
+                  <p>
+                    Aby skorzystać z tych praw, skontaktuj się z nami.
+                  </p>
+                
+                  <h3>7. Bezpieczeństwo danych</h3>
+                  <p>
+                    Stosujemy odpowiednie środki techniczne i organizacyjne chroniące dane przed dostępem osób nieuprawnionych, utratą, zniszczeniem czy nieuprawnioną modyfikacją.
+                  </p>
+                
+                  <h3>8. Pliki cookies</h3>
+                  <p>
+                    Nasza strona korzysta z plików cookies. Szczegółowe informacje znajdują się w <a href="#" data-section="polityka-cookies">Polityce cookies</a>.
+                  </p>
+                
+                  <h3>9. Zmiany w polityce prywatności</h3>
+                  <p>
+                    Zastrzegamy sobie prawo do zmian w niniejszej polityce. Aktualna wersja zawsze będzie dostępna na tej stronie.
+                  </p>
+          </section>
+
+      <section id="polityka-cookies" class="section">
+              <h2>Zasady dotyczące plików cookies</h2>
+              <p>Nasza strona internetowa korzysta z plików cookies, aby zapewnić prawidłowe działanie serwisu, poprawić komfort użytkowników oraz analizować ruch na stronie. Poniżej wyjaśniamy, czym są pliki cookies i jak je kontrolować.</p>
+
+              <h3>Czym są pliki cookies?</h3>
+              <p>Cookies to niewielkie pliki tekstowe zapisywane na Twoim urządzeniu (komputerze, smartfonie itp.) podczas odwiedzania stron internetowych. Pozwalają one stronie zapamiętać Twoje ustawienia, preferencje oraz inne informacje, które ułatwiają korzystanie z serwisu.</p>
+
+              <h3>Jakie pliki cookies stosujemy?</h3>
+              <ul>
+                <li><strong>Cookies niezbędne</strong> – pozwalają na korzystanie z podstawowych funkcji strony, takich jak nawigacja czy bezpieczeństwo.</li>
+                <li><strong>Cookies funkcjonalne</strong> – zapamiętują Twoje preferencje (np. język, układ strony).</li>
+                <li><strong>Cookies analityczne</strong> – pomagają nam analizować ruch na stronie i poprawiać jej działanie (np. Google Analytics).</li>
+                <li><strong>Cookies marketingowe</strong> – (jeśli używane) służą do dostosowania reklam do Twoich zainteresowań.</li>
+              </ul>
+            
+              <h3>Zarządzanie plikami cookies</h3>
+              <p>Masz prawo zarządzać plikami cookies w każdej chwili:</p>
+              <ul>
+                <li>Możesz zmienić ustawienia cookies w swojej przeglądarce — blokować, usuwać lub akceptować.</li>
+                <li>W przypadku zablokowania cookies niektóre funkcje strony mogą nie działać poprawnie.</li>
+                <li>Nasza strona wyświetla powiadomienie o cookies, aby uzyskać Twoją zgodę na ich stosowanie.</li>
+              </ul>
+            
+              <h3>Więcej informacji</h3>
+              <p>Więcej informacji o plikach cookies znajdziesz na stronach pomocy swojej przeglądarki internetowej.</p>
+              <button id="btnChangeDecision" class="btn-change-decision">Zmiana decyzji</button>
+      </section>      
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+            <div>
+              <h3>Lokalizacja firmy</h3>
+              <div class="lok">ul. Przykładowa 1, 00-000 Miasto<br>
+              NIP: 123-456-78-90<br>
+              REGON: 987654321</div>
+            </div>
+            <div>
+              <h3>Polityka i regulaminy</h3>
+              <a href="#" class="footer-link" id="pry" data-section="polityka-prywatnosci">Polityka prywatności</a><br>
+                <a href="#" class="footer-link" id="cookies" data-section="polityka-cookies">Polityka cookies</a>
+            </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+
+<div id="cookieConsent" class="cookie-consent hidden">
+  <div class="cookie-box">
+    <p>Nasza strona korzysta z plików cookies. <a href="#" data-section="polityka-cookies" id="moreInfo">Więcej informacji</a>.</p>
+    <div class="cookie-buttons">
+      <button id="acceptCookies">Akceptuję</button>
+      <button id="rejectCookies">Nie zgadzam się</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
